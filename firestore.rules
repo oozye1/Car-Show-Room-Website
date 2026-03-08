@@ -106,8 +106,11 @@ service cloud.firestore {
 
     function isValidSettings() {
       let data = request.resource.data;
-      return (!('siteName' in data) || validStringLength('siteName', 1, 100)) &&
-             (!('contactEmail' in data) || isValidEmail(data.contactEmail));
+      return (!('siteName' in data) || data.siteName is string) &&
+             (!('contactEmail' in data) || data.contactEmail is string) &&
+             (!('contactPhone' in data) || data.contactPhone is string) &&
+             (!('whatsappNumber' in data) || data.whatsappNumber is string) &&
+             (!('address' in data) || data.address is string);
     }
 
     // ===============================================================

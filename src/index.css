@@ -202,12 +202,3 @@ body {
 img {
   transition: opacity 0.3s ease;
 }
-
-img[loading="lazy"] {
-  opacity: 0;
-}
-
-img.loaded,
-img:not([loading="lazy"]) {
-  opacity: 1;
-}

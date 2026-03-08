@@ -37,6 +37,7 @@ export interface SiteSettings {
   siteName: string;
   contactEmail: string;
   contactPhone: string;
+  whatsappNumber: string;
   address: string;
   socialLinks: {
     facebook: string;

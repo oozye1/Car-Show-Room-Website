@@ -59,6 +59,11 @@ export const AdminSettings: React.FC = () => {
               <input {...register('contactPhone')} className="w-full bg-black border border-zinc-700 text-white px-4 py-3 rounded-xl focus:border-yellow-500 focus:outline-none" />
             </div>
             <div>
+              <label className="block text-sm font-medium text-gray-400 mb-2">WhatsApp Number</label>
+              <input {...register('whatsappNumber')} placeholder="e.g. 447123456789 (country code, no + or spaces)" className="w-full bg-black border border-zinc-700 text-white px-4 py-3 rounded-xl focus:border-yellow-500 focus:outline-none" />
+              <p className="text-gray-600 text-xs mt-1">Include country code, no + symbol or spaces (e.g. 447123456789)</p>
+            </div>
+            <div>
               <label className="block text-sm font-medium text-gray-400 mb-2">Address</label>
               <input {...register('address')} className="w-full bg-black border border-zinc-700 text-white px-4 py-3 rounded-xl focus:border-yellow-500 focus:outline-none" />
             </div>
